@@ -6,7 +6,7 @@ import Portfolio from './Portfolio'
 
 const HeroSectionScreen = () => {
     return (
-        <Box position="relative">
+        <Box position="relative" id='about'>
             <Box bg="black" h="550px" position="absolute" top="0" left="0" right="0" zIndex="-1">
                 <Container maxW={'7xl'} py={10} px={5} position="relative" zIndex="1" >
                     <Flex justifyContent={"space-between"} gap={3} p={3} flexDirection={{ base: 'column', sm: 'row' }} mt={{ base: '10px', sm: '30px' }} >

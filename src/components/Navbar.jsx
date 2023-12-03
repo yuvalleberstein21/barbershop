@@ -1,30 +1,53 @@
-import { Avatar, Box, Button, Container, Flex, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Image } from '@chakra-ui/react'
 import React from 'react'
+import { Link, Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
-    return (
 
+    const handleContactClick = (e) => {
+        e.preventDefault();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const handlePortfolioClick = (e) => {
+        e.preventDefault();
+        const portfolioSection = document.getElementById('portfolio');
+        if (portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const handleAboutClick = (e) => {
+        e.preventDefault();
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    return (
         <Box bg="black">
             <Container maxW={"container.lg"} bg={'black'}>
                 <Flex w={"full"} justifyContent={{ base: "center", sm: "space-between" }} pt={2} gap={{ base: 1, md: 3 }} alignItems={"center"} flexDir={{ base: "column", sm: "row" }}>
                     <Image w={"130px"} objectFit={'cover'} name='ShakedBarberShop' src='/logo1.png' display={{ base: "block", sm: "block" }} cursor={"pointer"}></Image>
                     <Flex color={'#fffaf0'} fontSize={14} gap={5} fontWeight={"bold"}>
-                        <Link>HOME</Link>
-                        <Link>ABOUT</Link>
-                        <Link>POSTS</Link>
-                        <Link>CONTACT</Link>
+                        <Link as={RouterLink} to={"/home"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }}>HOME</Link>
+                        <Link as={RouterLink} to={"/about"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }} onClick={handleAboutClick}>ABOUT</Link>
+                        <Link as={RouterLink} to={"/portfolio"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }} onClick={handlePortfolioClick}>PORTFOLIO</Link>
+                        <Link as={RouterLink} to={"/contact"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }} onClick={handleContactClick}>CONTACT</Link>
                     </Flex>
 
                     <Flex gap={4}>
-                        <Link>
-                            <Button bg={"#FFDEAD"} display={{ base: 'none', md: 'block' }} textDecorationLine={'none'} color={"#0e0e0e"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} size={"sm"}>
+                        <Link _hover={{ borderBottom: 'none' }}>
+                            <Button bg={"#FFDEAD"} display={{ base: 'none', md: 'block' }} color={"#0e0e0e"} _hover={{ bg: "#FFDEAD" }} size={"sm"}>
                                 BOOK AN APPOINTMENT
                             </Button>
                         </Link>
                     </Flex>
                 </Flex>
             </Container>
-        </Box>
+        </Box >
 
     )
 }

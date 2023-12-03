@@ -1,24 +1,21 @@
-import { Box, Button, Flex, Grid, Heading } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, Heading, Image, Link } from '@chakra-ui/react'
 import React from 'react'
 import ProtfolioPost from '../components/ProtfolioPost'
 import Footer from '../components/Footer'
+import { BsInstagram } from "react-icons/bs";
 
 
 const Portfolio = () => {
     return (
         <>
-            <Flex justifyContent={'center'} alignItems={'center'}>
+            <Flex justifyContent={'center'} alignItems={'center'} id='portfolio'>
                 <Heading borderBottom={'1px solid gray'} transform='scale(1.1)' transition={'all .2s ease-in-out'} p={3}>PORTFOLIO</Heading>
-
-            </Flex >
-
-
+            </Flex>
             <Grid
                 templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
                 gap={4}
                 columnGap={3}
                 p={5}
-
             >
                 <ProtfolioPost img="/image3.jpeg" />
                 <ProtfolioPost img="/image4.jpeg" />
@@ -37,7 +34,6 @@ const Portfolio = () => {
                     </Button>
                 </Flex>
             </Box>
-
             <Footer />
         </>
     )
