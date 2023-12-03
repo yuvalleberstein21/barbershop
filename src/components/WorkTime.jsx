@@ -5,9 +5,12 @@ const WorkTime = () => {
     return (
         <>
             <Box>
-                <Heading>BUISNESS HOURS</Heading>
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5}>
-                    <Box p='6'>
+                <Flex justifyContent={'center'} alignItems={'center'}>
+                    <Heading justifyContent={'center'} alignItems={'center'} mx={6}>BUISNESS HOURS</Heading>
+                </Flex>
+
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5} bgImage={'/logo2.png'} bgRepeat={'no-repeat'} bgPosition={'center'} bgSize={'cover'}>
+                    <Box p='6' h={'250px'} w={'350px'}>
                         <Box display='flex' alignItems='baseline' justifyContent={"space-between"}>
                             <Badge borderRadius='full' px='2' colorScheme='teal'>
                                 DAY
@@ -19,29 +22,26 @@ const WorkTime = () => {
                                 HOURS
                             </Badge>
                         </Box>
-                        <Flex justifyContent={"space-between"}>
-                            <Box as='span' color='gray.600' fontSize='sm'>
+                        <Flex justifyContent={"space-between"} alignItems={'center'} my={8}>
+                            <Box as='span' color='gray.300' fontSize='sm' fontWeight={'bold'} gap={5}>
                                 Sunday <br />
                                 Monday <br />
                                 Tuesday <br />
                                 Wednesday <br />
                                 Thursday <br />
                                 Friday <br />
-                                Saturday <br />
+
                             </Box>
-                            <Box as='span' color='gray.600' fontSize='sm'>
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
-                                08:00 - 16:00 <br />
+                            <Box as='span' color='gray.300' fontSize='sm' fontWeight={'bold'}>
+                                09:00 - 20:00 <br />
+                                09:00 - 20:00 <br />
+                                09:00 - 20:00 <br />
+                                09:00 - 20:00 <br />
+                                09:00 - 20:00 <br />
+                                09:00 - 15:00 <br />
+
                             </Box>
                         </Flex>
-
-
-
                     </Box>
                 </Box>
             </Box>

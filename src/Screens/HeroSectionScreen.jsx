@@ -1,6 +1,8 @@
 import { Box, Button, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import WorkTime from '../components/WorkTime'
+import Portfolio from './Portfolio'
+
 
 const HeroSectionScreen = () => {
     return (
@@ -9,8 +11,10 @@ const HeroSectionScreen = () => {
                 <Container maxW={'7xl'} py={10} px={5} position="relative" zIndex="1" >
                     <Flex justifyContent={"space-between"} gap={3} p={3} flexDirection={{ base: 'column', sm: 'row' }} mt={{ base: '10px', sm: '30px' }} >
                         <Box maxW='32rem'>
-                            <Heading fontSize={{ base: "40px", sm: "60px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#FFFAF0'}>ABOUT OUR <br /> BARBER SHOP</Heading>
-                            <Flex gap={5} ml={5}>
+                            <Flex justifyContent={'center'} alignItems={'center'}>
+                                <Heading fontSize={{ base: "40px", sm: "60px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#FFFAF0'}>ABOUT OUR <br /> BARBER SHOP</Heading>
+                            </Flex>
+                            <Flex gap={5} justifyContent={'center'} alignItems={'center'}>
                                 <Button size='md' fontSize={{ base: '10px', sm: "12px" }} bg={"#FFDEAD"} color={"black"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} mt='24px'>
                                     BOOK AN APPOINTMENT
                                 </Button>
@@ -18,6 +22,7 @@ const HeroSectionScreen = () => {
                                     CONTACT
                                 </Button>
                             </Flex>
+
                             <Box mt={5} overflow={"hidden"} justifyContent={"flex-start"}>
                                 <Image src='/image1.jpeg' borderRadius={1} objectFit={"cover"} />
                             </Box>
@@ -35,8 +40,11 @@ const HeroSectionScreen = () => {
                         </Box>
                     </Flex>
                 </Container>
+                <Portfolio />
             </Box>
+
         </Box>
+
 
 
     )
