@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             <Box id='contact' h={'full'} bgPosition={'center'} bgSize={'cover'} bgImage={'/wepik-export-20231203130041Bjl2.jpeg'} position={'relative'}>
                 <Flex className='float'>
-                    <Link as={RouterLink} to={'whatsapp://send?abid=+972506485647&text=Hii i would like to talk!'}>
+                    <Link as={RouterLink} to={'https://api.whatsapp.com/send?phone=0506485647'}>
                         <FaWhatsapp className='my-float' />
                     </Link>
                 </Flex>
