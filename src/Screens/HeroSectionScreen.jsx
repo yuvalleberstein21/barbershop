@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, Heading, Image, Text, VStack } from '@cha
 import React from 'react'
 import WorkTime from '../components/WorkTime'
 import Portfolio from './Portfolio'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 
 const HeroSectionScreen = () => {
@@ -24,7 +24,7 @@ const HeroSectionScreen = () => {
                             </Flex>
                             <Flex gap={5} justifyContent={'center'} alignItems={'center'}>
                                 <Button size='md' fontSize={{ base: '10px', sm: "12px" }} bg={"#FFDEAD"} color={"black"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} mt='24px'>
-                                    <Link to={'https://api.whatsapp.com/send?phone=+972506485647'}>
+                                    <Link onClick={handleContactSectionClick}>
                                         SEND A MESSAGE
                                     </Link>
                                 </Button>
@@ -40,9 +40,7 @@ const HeroSectionScreen = () => {
                         <Box maxW='32rem'>
                             <Flex gap={2}>
                                 <Text fontSize='14px' mt={2} fontWeight={'bold'} color={{ base: '#FFFAF0', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
-
                                     Welcome to Arad's finest barber shop. I'm Shaked Zaguri,a 24-year-old craftsman dedicated to delivering premium haircuts daily.
-
                                 </Text>
                             </Flex>
 
