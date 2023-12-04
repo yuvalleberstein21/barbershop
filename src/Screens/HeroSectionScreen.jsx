@@ -24,7 +24,7 @@ const HeroSectionScreen = () => {
                             </Flex>
                             <Flex gap={5} justifyContent={'center'} alignItems={'center'}>
                                 <Button size='md' fontSize={{ base: '10px', sm: "12px" }} bg={"#FFDEAD"} color={"black"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} mt='24px'>
-                                    <Link to={'whatsapp://send?abid=+972506485647&text=Hii i would like to talk!'}>
+                                    <Link to={'https://api.whatsapp.com/send?phone=+972506485647'}>
                                         SEND A MESSAGE
                                     </Link>
                                 </Button>
