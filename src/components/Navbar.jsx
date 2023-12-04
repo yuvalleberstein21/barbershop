@@ -28,10 +28,10 @@ const Navbar = () => {
     };
 
     return (
-        <Box bg="black">
-            <Container maxW={"container.lg"} bg={'black'}>
+        <Box>
+            <Container maxW={"container.lg"}>
                 <Flex w={"full"} justifyContent={{ base: "center", sm: "space-between" }} pt={2} gap={{ base: 1, md: 3 }} alignItems={"center"} flexDir={{ base: "column", sm: "row" }}>
-                    <Image w={"150px"} objectFit={'cover'} name='ShakedBarberShop' src='/logo1.png' display={{ base: "block", sm: "block" }} cursor={"pointer"}></Image>
+                    <Image w={"140px"} objectFit={'cover'} name='ShakedBarberShop' src='/logo1.png' display={{ base: "block", sm: "block" }} cursor={"pointer"}></Image>
                     <Flex color={'#fffaf0'} fontSize={14} gap={5} fontWeight={"bold"}>
                         <Link as={RouterLink} to={"/home"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }}>HOME</Link>
                         <Link as={RouterLink} to={"/about"} _hover={{ borderBottom: 'none', color: '#e8e3d9de' }} onClick={handleAboutClick}>ABOUT</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
                     <Flex gap={4}>
                         <Link _hover={{ borderBottom: 'none' }} to={'tel:+972506485647'}>
-                            <Button bg={"#FFDEAD"} display={{ base: 'none', md: 'block' }} color={"#0e0e0e"} _hover={{ bg: "#FFDEAD" }} size={"sm"}>
+                            <Button bg={"#353535"} display={{ base: 'none', md: 'block' }} color={"white"} _hover={{ bg: "#282828" }} size={"sm"}>
                                 <Flex gap={3} justifyContent={'space-between'}>
                                     CALL ME <FaPhoneAlt />
                                 </Flex>

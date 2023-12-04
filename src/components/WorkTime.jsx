@@ -8,14 +8,14 @@ const WorkTime = () => {
                 <Flex justifyContent={'center'} alignItems={'center'}>
                     <Heading justifyContent={'center'} alignItems={'center'} mx={6}>BUISNESS HOURS</Heading>
                 </Flex>
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5} bgColor='black' bgImage={'/logo1.png'} bgRepeat={'no-repeat'} bgSize={'70%'} bgPosition={'center'}>
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5} bgColor='darkgray' bgImage={'/logo1.png'} bgRepeat={'no-repeat'} bgSize={'70%'} bgPosition={'center'}>
                     <Box p='6' h={'250px'} w={'350px'}>
                         <Box display='flex' alignItems='baseline' justifyContent={"space-between"}>
-                            <Badge borderRadius='full' px='2' colorScheme='teal'>
+                            <Badge borderRadius='full' px='2' colorScheme='gray'>
                                 DAY
                             </Badge>
                             <Badge
-                                colorScheme='teal'
+                                colorScheme='gray'
                                 borderRadius='full'
                             >
                                 HOURS
