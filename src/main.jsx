@@ -11,12 +11,9 @@ import { BrowserRouter } from 'react-router-dom';
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("gray.100", "#000")(props),
       color: mode("gray.800", "whiteAlpha.900")(props),
-      backgroundImage: "url('background.jpeg')",
+      backgroundImage: "url('background.jpeg') !important",
       backgroundSize: "cover",
-      backgroundColor: mode("rgba(255, 255, 255, 0.5)", "rgba(0, 0, 0, 0.5)")(props),
-
     }
   })
 }

@@ -8,7 +8,7 @@ const Portfolio = () => {
     return (
         <>
             <Flex justifyContent={'center'} alignItems={'center'} id='portfolio'>
-                <Heading borderBottom={'1px solid gray'} transform='scale(1.1)' transition={'all .2s ease-in-out'} p={3}>PORTFOLIO</Heading>
+                <Heading borderBottom={'2px solid #393939'} borderRadius={3} fontSize={'55px'} p={3}>גלריה</Heading>
             </Flex>
             <Grid
                 templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
@@ -25,7 +25,7 @@ const Portfolio = () => {
             </Grid>
             <Box mb={8}>
                 <Flex justifyContent={'center'} alignItems={'center'} id='portfolio'>
-                    <Heading borderBottom={'1px solid gray'} transform='scale(1.1)' transition={'all .2s ease-in-out'} p={3}>CONTACT</Heading>
+                    <Heading borderBottom={'2px solid #393939'} fontSize={'55px'} p={3}>צור קשר</Heading>
                 </Flex>
             </Box>
             <Footer />

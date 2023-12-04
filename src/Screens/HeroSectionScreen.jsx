@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, Heading, Image, Text, VStack } from '@cha
 import React from 'react'
 import WorkTime from '../components/WorkTime'
 import Portfolio from './Portfolio'
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 
 const HeroSectionScreen = () => {
@@ -20,16 +20,16 @@ const HeroSectionScreen = () => {
                     <Flex justifyContent={"space-between"} gap={3} p={3} flexDirection={{ base: 'column', sm: 'row' }} mt={{ base: '10px', sm: '30px' }} >
                         <Box maxW='32rem'>
                             <Flex justifyContent={'center'} alignItems={'center'}>
-                                <Heading className='heading' fontSize={{ base: "35px", sm: "55px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#FFFAF0'} >ABOUT OUR <br /> BARBER SHOP</Heading>
+                                <Heading className='heading' fontSize={{ base: "35px", sm: "50px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#2e2e2e'} fontStyle={'italic'}> <Text color={'#FFFAF0'}>SHAKED ZAGURI</Text> BARBER SHOP</Heading>
                             </Flex>
                             <Flex gap={5} justifyContent={'center'} alignItems={'center'}>
                                 <Button size='md' fontSize={{ base: '10px', sm: "12px" }} bg={"#FFDEAD"} color={"black"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} mt='24px'>
-                                    <Link onClick={handleContactSectionClick}>
-                                        SEND A MESSAGE
-                                    </Link>
+                                    <a href='https://api.whatsapp.com/send?phone=+972506485647'>
+                                        שלחו לי הודעה
+                                    </a>
                                 </Button>
-                                <Button color='white' bg={"#353535"} onClick={handleContactSectionClick} p={2} size='md' _hover={{ bg: '#3355332e3', color: 'white' }} fontSize={{ base: '10px', sm: "12px" }} mt='24px'>
-                                    CONTACT
+                                <Button color='white' bg={"#353535"} onClick={handleContactSectionClick} p={2} size='md' _hover={{ bg: '#3355332e3', color: 'white' }} fontSize={{ base: '12px', sm: "14px" }} mt='24px'>
+                                    צור קשר
                                 </Button>
                             </Flex>
 
@@ -39,9 +39,11 @@ const HeroSectionScreen = () => {
                         </Box>
                         <Box maxW='32rem'>
                             <Flex gap={2}>
-                                <Text fontSize='14px' mt={2} fontWeight={'bold'} color={{ base: '#FFFAF0', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
-                                    Welcome to Arad's finest barber shop. I'm Shaked Zaguri,a 24-year-old craftsman dedicated to delivering premium haircuts daily.
+                                <Text fontSize='14px' mt={2} mr={3} fontWeight={'bold'} dir='rtl' color={{ base: '#FFFAF0', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
+                                    שקד זגורי בן 24 מערד מתעסק בתספורות פרימיום לגבר ברמה הכי גבוהה שיש ! מוזמנים לתאם תורים דרך הקישור לוואצאפ
                                 </Text>
+                                <Image src='/barber-shop.png' w={'30px'} h={'50px'} alt='barber shop logo' />
+
                             </Flex>
 
                             <Box p={3} overflow={"hidden"}>

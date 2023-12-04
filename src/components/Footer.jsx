@@ -7,7 +7,7 @@ import FooterBottom from './FooterBottom';
 const Footer = () => {
     return (
         <>
-            <Box id='contact' h={'full'} bgPosition={'center'} bgSize={'cover'} bgImage={'/wepik-export-20231203130041Bjl2.jpeg'} position={'relative'}>
+            <Box id='contact' h={'full'} bgPosition={'center'} bgSize={'cover'} bgImage={'/wepik-export-20231204231729LVp0.jpeg'} position={'relative'}>
                 <Flex className='float'>
                     <Link as={RouterLink} to={'https://api.whatsapp.com/send?phone=+972506485647'}>
                         <FaWhatsapp className='my-float' />
