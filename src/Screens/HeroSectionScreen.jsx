@@ -2,9 +2,17 @@ import { Box, Button, Container, Flex, Heading, Image, Text, VStack } from '@cha
 import React from 'react'
 import WorkTime from '../components/WorkTime'
 import Portfolio from './Portfolio'
+import { Link } from 'react-router-dom'
 
 
 const HeroSectionScreen = () => {
+    const handleContactSectionClick = (e) => {
+        e.preventDefault();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <Box position="relative" id='about'>
             <Box bg="black" h="550px" position="absolute" top="0" left="0" right="0" zIndex="-1">
@@ -12,13 +20,15 @@ const HeroSectionScreen = () => {
                     <Flex justifyContent={"space-between"} gap={3} p={3} flexDirection={{ base: 'column', sm: 'row' }} mt={{ base: '10px', sm: '30px' }} >
                         <Box maxW='32rem'>
                             <Flex justifyContent={'center'} alignItems={'center'}>
-                                <Heading fontSize={{ base: "40px", sm: "60px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#FFFAF0'}>ABOUT OUR <br /> BARBER SHOP</Heading>
+                                <Heading className='heading' fontSize={{ base: "35px", sm: "55px" }} mb={2} justifyContent={"center"} alignItems={"center"} ml={5} fontWeight={"bold"} color={'#FFFAF0'} >ABOUT OUR <br /> BARBER SHOP</Heading>
                             </Flex>
                             <Flex gap={5} justifyContent={'center'} alignItems={'center'}>
                                 <Button size='md' fontSize={{ base: '10px', sm: "12px" }} bg={"#FFDEAD"} color={"black"} _hover={{ bg: "#FFDEAD", color: "gray.600" }} mt='24px'>
-                                    BOOK AN APPOINTMENT
+                                    <Link to={'whatsapp://send?abid=+972506485647&text=Hii i would like to talk!'}>
+                                        SEND A MESSAGE
+                                    </Link>
                                 </Button>
-                                <Button color='white' p={2} variant='outline' size='md' _hover={{ bg: '#FFDEAD', color: 'black' }} fontSize={{ base: '10px', sm: "12px" }} mt='24px'>
+                                <Button color='white' onClick={handleContactSectionClick} p={2} variant='outline' size='md' _hover={{ bg: '#FFDEAD', color: 'black' }} fontSize={{ base: '10px', sm: "12px" }} mt='24px'>
                                     CONTACT
                                 </Button>
                             </Flex>

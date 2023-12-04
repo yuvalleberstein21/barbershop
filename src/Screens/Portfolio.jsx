@@ -25,13 +25,8 @@ const Portfolio = () => {
                 <ProtfolioPost img="/image8.jpeg" />
             </Grid>
             <Box mb={8}>
-                <Flex gap={3} justifyContent={'center'} alignItems={'center'} w={'full'}>
-                    <Button color='black' border={'2px solid black'} p={2} variant='outline' size='md' _hover={{ bg: 'black', color: 'white' }} fontSize={{ base: '10px', sm: "12px" }} mt='24px'>
-                        BOOK AN APPOINTMENT
-                    </Button>
-                    <Button color='white' border={'2px solid black'} bg={'black'} p={2} variant='outline' size='md' _hover={{ bg: 'whiteAlpha.600', color: 'black' }} fontSize={{ base: '10px', sm: "12px" }} mt='24px'>
-                        LEARN MORE
-                    </Button>
+                <Flex justifyContent={'center'} alignItems={'center'} id='portfolio'>
+                    <Heading borderBottom={'1px solid gray'} transform='scale(1.1)' transition={'all .2s ease-in-out'} p={3}>CONTACT</Heading>
                 </Flex>
             </Box>
             <Footer />

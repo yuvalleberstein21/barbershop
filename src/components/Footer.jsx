@@ -2,6 +2,7 @@ import { Box, Flex, Link } from '@chakra-ui/react'
 import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom";
+import FooterBottom from './FooterBottom';
 
 const Footer = () => {
     return (
@@ -13,6 +14,7 @@ const Footer = () => {
                     </Link>
                 </Flex>
             </Box>
+            <FooterBottom />
         </>
     )
 }

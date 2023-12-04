@@ -1,6 +1,7 @@
 import { Box, Button, Container, Flex, Image } from '@chakra-ui/react'
 import React from 'react'
 import { Link, Link as RouterLink } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -39,9 +40,12 @@ const Navbar = () => {
                     </Flex>
 
                     <Flex gap={4}>
-                        <Link _hover={{ borderBottom: 'none' }}>
+                        <Link _hover={{ borderBottom: 'none' }} to={'tel:+972506485647'}>
                             <Button bg={"#FFDEAD"} display={{ base: 'none', md: 'block' }} color={"#0e0e0e"} _hover={{ bg: "#FFDEAD" }} size={"sm"}>
-                                BOOK AN APPOINTMENT
+                                <Flex gap={3} justifyContent={'space-between'}>
+                                    CALL ME <FaPhoneAlt />
+                                </Flex>
+
                             </Button>
                         </Link>
                     </Flex>
