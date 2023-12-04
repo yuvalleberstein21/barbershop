@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Image, Text } from '@chakra-ui/react'
 import { GrInstagram } from "react-icons/gr";
 import { SiGmail } from "react-icons/si";
 import React from 'react'
@@ -16,7 +16,6 @@ const FooterBottom = () => {
                 spacing={4}
                 justify={{ base: 'center', md: 'space-between' }}
                 align={{ base: 'center', md: 'center' }}>
-                {/* <Logo /> */}
                 <Box>
                     <Flex alignItems={'center'} justifyContent={'space-between'}>
                         <Image w={"50px"} objectFit={'contain'} src='/logo1.png' display={{ base: "block", sm: "block" }}></Image>

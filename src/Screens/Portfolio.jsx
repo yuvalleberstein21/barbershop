@@ -1,8 +1,7 @@
-import { Box, Button, Flex, Grid, Heading, Image, Link } from '@chakra-ui/react'
+import { Box, Flex, Grid, Heading } from '@chakra-ui/react'
 import React from 'react'
 import ProtfolioPost from '../components/ProtfolioPost'
 import Footer from '../components/Footer'
-import { BsInstagram } from "react-icons/bs";
 
 
 const Portfolio = () => {

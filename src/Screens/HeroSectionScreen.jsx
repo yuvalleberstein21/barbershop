@@ -52,11 +52,7 @@ const HeroSectionScreen = () => {
                 </Container>
                 <Portfolio />
             </Box>
-
         </Box>
-
-
-
     )
 }
 

@@ -1,10 +1,9 @@
-import { Flex, GridItem, Heading, Image } from '@chakra-ui/react'
+import { Flex, GridItem, Image } from '@chakra-ui/react'
 import React from 'react'
 
 const ProtfolioPost = ({ img }) => {
     return (
         <>
-
             <GridItem
                 cursor={"pointer"}
                 borderRadius={4}
@@ -12,7 +11,6 @@ const ProtfolioPost = ({ img }) => {
                 border={"1px solid"}
                 borderColor={"whiteAlpha.300"}
                 position={"relative"}
-
             >
                 <Flex
                     opacity={0}
