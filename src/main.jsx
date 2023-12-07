@@ -42,6 +42,7 @@ const styles = {
       color: mode("gray.800", "whiteAlpha.900")(props),
       backgroundImage: "url('background.jpeg') !important",
       backgroundSize: "cover",
+
     }
   })
 }

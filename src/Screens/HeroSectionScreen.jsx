@@ -33,16 +33,19 @@ const HeroSectionScreen = () => {
                                 </Button>
                             </Flex>
 
-                            <Box mt={5} overflow={"hidden"} justifyContent={"flex-start"}>
+                            <Box mt={10} overflow={"hidden"} justifyContent={"flex-start"}>
                                 <Image src='/image1.jpeg' borderRadius={1} objectFit={"cover"} />
                             </Box>
                         </Box>
                         <Box maxW='32rem'>
                             <Flex gap={2}>
-                                <Text fontSize='14px' mt={2} mr={3} fontWeight={'bold'} dir='rtl' color={{ base: '#FFFAF0', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
-                                    שקד זגורי בן 24 מערד מתעסק בתספורות פרימיום לגבר ברמה הכי גבוהה שיש ! מוזמנים לתאם תורים דרך הקישור לוואצאפ
-                                </Text>
-                                <Image src='/barber-shop.png' w={'30px'} h={'50px'} alt='barber shop logo' />
+                                <Box>
+                                    <Text fontSize={{ base: '16px', sm: '14px' }} mt={{ base: 12, sm: 1 }} mb={3} p={5} mr={3} fontWeight={'bold'} dir='rtl' color={{ base: '#ffffff', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
+                                        שקד זגורי בן 24 מערד מתעסק בתספורות פרימיום לגבר ברמה הכי גבוהה שיש ! <br /> מוזמנים לתאם תורים דרך הקישור לוואצאפ
+                                    </Text>
+
+                                </Box>
+
 
                             </Flex>
 

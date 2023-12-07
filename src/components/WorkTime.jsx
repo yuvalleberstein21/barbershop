@@ -8,7 +8,7 @@ const WorkTime = () => {
                 <Flex justifyContent={'center'} alignItems={'center'}>
                     <Heading dir='rtl' justifyContent={'center'} alignItems={'center'} mx={6}>שעות פעילות</Heading>
                 </Flex>
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5} bgColor='darkgray' bgImage={'/logo1.png'} bgRepeat={'no-repeat'} bgSize={'70%'} bgPosition={'center'}>
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' my={5} bgColor='#0e0b0b' bgImage={'/logo1.png'} bgRepeat={'no-repeat'} bgSize={'70%'} bgPosition={'center'}>
                     <Box p='6' h={'250px'} w={'350px'}>
                         <Box display='flex' alignItems='baseline' justifyContent={"space-between"}>
                             <Badge borderRadius='full' px='2' colorScheme='gray'>
