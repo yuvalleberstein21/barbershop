@@ -40,7 +40,7 @@ const HeroSectionScreen = () => {
                         <Box maxW='32rem'>
                             <Flex gap={2}>
                                 <Box>
-                                    <Text fontSize={{ base: '16px', sm: '14px' }} mt={{ base: 12, sm: 1 }} mb={3} p={5} mr={3} fontWeight={'bold'} dir='rtl' color={{ base: '#ffffff', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
+                                    <Text fontSize={{ base: '16px', sm: '14px' }} mt={{ base: 12, sm: 1 }} mb={3} mr={3} fontWeight={'bold'} dir='rtl' color={{ base: '#ffffff', sm: '#ffffff' }} overflow={'hidden'} className='heading'>
                                         שקד זגורי בן 24 מערד מתעסק בתספורות פרימיום לגבר ברמה הכי גבוהה שיש ! <br /> מוזמנים לתאם תורים דרך הקישור לוואצאפ
                                     </Text>
 
